@@ -1,0 +1,6 @@
+<app-ui-button-input (added)="handleUserAdded($event)">Add user</app-ui-button-input>
+
+<app-user-list
+  [users]="users$ | async"
+  (userRemoved)="handleRemoveUserButtonClicked($event)">
+</app-user-list>

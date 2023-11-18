@@ -1,0 +1,10 @@
+<input
+  [formControl]="buttonInputControl"
+  placeholder="Type to activate the button!"
+/>
+<button
+  (click)="addValue()"
+  [disabled]="buttonInputControl.value === ''"
+>
+  <ng-content></ng-content>
+</button>

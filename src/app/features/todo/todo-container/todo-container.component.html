@@ -1,0 +1,7 @@
+<app-ui-button-input (added)="handleTodoAdded($event)">Add</app-ui-button-input>
+
+<app-todo-list
+  [todos]="todos$ | async"
+  (todoRemoved)="handleTodoRemoved($event)"
+  (todoToggled)="handleTodoToggled($event)"
+></app-todo-list>

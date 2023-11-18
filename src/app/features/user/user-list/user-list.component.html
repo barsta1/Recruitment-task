@@ -1,0 +1,6 @@
+<div *ngFor="let item of users; let i = index">
+  <app-user-detail
+    [user]="item"
+    (userRemoved)="handleUserRemoved(i)"
+  ></app-user-detail>
+</div>
